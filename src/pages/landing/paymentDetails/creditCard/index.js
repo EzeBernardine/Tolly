@@ -2,7 +2,7 @@ import React from "react";
 import { Styles } from "./styles.js";
 import { Flex, Frame, Grid } from "../../../../component/Box/styles";
 import MasterCode from "../../../../assets/yelloOrange.webp";
-import Image from "../../../../assets/water.jpg";
+import Image from "../../../../assets/unnamed.png";
 import Input from "../../../../component/Input";
 import { VisibilityIcon } from "../../../../assets/svg";
 import { generateID } from "../../../../lib/generateID.js";
