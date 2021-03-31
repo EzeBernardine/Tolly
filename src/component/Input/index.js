@@ -1,9 +1,6 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { Styles } from "./styles.js";
-import { Flex, Frame, Grid } from "../Box/styles";
-import { Header4, Header3, Span } from "../FontSize/styles";
-import Tabs from "../Tabs";
-import Logo from "../../assets/woman-coder.webp";
+import { Frame } from "../Box/styles";
 
 const Input = ({ icon, img, text }) => {
   return (

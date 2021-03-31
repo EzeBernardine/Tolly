@@ -1,15 +1,13 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { Styles } from "./styles.js";
 import { Flex, Frame, Grid } from "../../../../component/Box/styles";
-import { Header4, Header3, Span } from "../../../../component/FontSize/styles";
-import Tabs from "../../../../component/Tabs";
 import MasterCode from "../../../../assets/yelloOrange.webp";
 import Image from "../../../../assets/water.jpg";
 import Input from "../../../../component/Input";
 import { VisibilityIcon } from "../../../../assets/svg";
+import { generateID } from "../../../../lib/generateID.js";
 
 const PaymentDetails = () => {
-  const [tabType, setTabType] = useState("redit Card");
   const cardArray = [Image, Image, Image];
   return (
     <Styles>
@@ -24,7 +22,12 @@ const PaymentDetails = () => {
           gridCol="repeat(auto-fill,minmax(250px, 1fr))"
         >
           {cardArray.map((img) => (
-            <Frame width="250px" height="120px" className="card">
+            <Frame
+              width="250px"
+              height="120px"
+              className="card"
+              key={generateID(15)}
+            >
               <img src={img} alt="card" />
             </Frame>
           ))}

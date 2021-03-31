@@ -1,9 +1,10 @@
-import React, { useState, useRef } from "react";
-import { Styles, PaymentStyles, SummaryStyles } from "./styles.js";
-import { Flex, Frame, Grid } from "../../../component/Box/styles";
-import { Header3, Bold, Span, Small } from "../../../component/FontSize/styles";
+import React from "react";
+import { Styles } from "./styles.js";
+import { Flex, Grid } from "../../../component/Box/styles";
+import { Header3, Span, Small } from "../../../component/FontSize/styles";
 import Accordion from "../../../component/Acordion";
 import { ShippingIcon, PaymentIcon, ReviewIcon } from "../../../assets/svg";
+import { generateID } from "../../../lib/generateID.js";
 
 const OrderSummary = () => {
   const summary = [
@@ -89,7 +90,7 @@ const OrderSummary = () => {
         justifyContent="space-between"
       >
         {summary.map(({ icon, text, color }, i) => (
-          <Flex width="max-content">
+          <Flex width="max-content" key={generateID(12)}>
             <Flex
               width="40px"
               height="40px"
@@ -112,7 +113,8 @@ const OrderSummary = () => {
           </Flex>
         ))}
       </Grid>
-      <Accordion panels={panels} />``
+      <Accordion panels={panels} />
+      
       <footer>
         <Flex justifyContent="space-between">
           <Span colorTheme="primary/darker" weight="500">

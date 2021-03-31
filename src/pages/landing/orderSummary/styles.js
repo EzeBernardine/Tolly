@@ -6,7 +6,7 @@ export const Styles = styled.section`
   margin: ${({ theme }) => theme.spacing.gutter};
   margin-right: ${({ theme }) => theme.spacing.xxlarge};
   padding: ${({ theme }) => theme.spacing.xlarge + " 0"};
-  @media (max-width: 950px) {
+  @media (max-width: 1300px) {
     margin: ${({ theme }) => theme.spacing.gutter};
   }
   > div:nth-child(2) {

@@ -1,8 +1,3 @@
-/*
- * component: Box
- * author: Eze Bernardine May
- * Date: April 16th, 2020
- */
 
 import styled from "styled-components";
 

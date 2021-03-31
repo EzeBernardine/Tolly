@@ -18,25 +18,12 @@ const palette = {
   },
 };
 
-const shadows = {
-  0: "none",
-  1: "0px 5px 10px rgba(0, 0, 0, 0.12)",
-  2: "0px 8px 30px rgba(0, 0, 0, 0.24)",
-};
-
-const typography = {
-  fontFamily:
-    "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif",
-};
-
 const shape = {
   borderRadius: spacing["xsmall"],
 };
 
 export const theme = {
   palette,
-  shadows,
-  typography,
   shape,
   fontSizes,
   spacing,

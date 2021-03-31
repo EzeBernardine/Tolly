@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { AcordionWrapper } from "./styles";
 import { ArrowDownIcon } from "../../assets/svg";
+import { generateID } from "../../lib/generateID";
 
 const Panel = (props) => {
   const itemRef = useRef();
@@ -23,17 +24,18 @@ const Panel = (props) => {
       <button className="panel__label" role="tab" onClick={activateTab}>
         {label.toUpperCase()}
 
-        <div className='panel_icon'>
+        <span className="panel_icon">
           <ArrowDownIcon width="15px" height="15px" />
-        </div>
+        </span>
       </button>
+
       <div
         ref={itemRef}
         className="panel__inner"
         style={innerStyle}
         aria-hidden={!isActive}
       >
-        <p className="panel__content">{content}</p>
+        <span className="panel__content">{content}</span>
       </div>
     </div>
   );
@@ -51,7 +53,7 @@ const Accordion = (props) => {
     <AcordionWrapper {...otherProps} role="tablist">
       {panels.map((panel, index) => (
         <Panel
-          key={index}
+          key={generateID(15)}
           activeTab={activeTab}
           index={index}
           {...panel}

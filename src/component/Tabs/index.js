@@ -1,8 +1,4 @@
-/*
- * component: Custom Component
- * author: Eze Bernardine May
- * Date: June 23, 2020
- */
+
 
 import React, { useState } from "react";
 import propTypes from "prop-types";
@@ -23,14 +19,12 @@ const Tabs = ({ click, children }) => {
         {children.map((child) => {
           const { label } = child.props;
           return (
-            <>
-              <Tab
-                activeTab={activeTab}
-                key={generateID(15)}
-                label={label}
-                onClick={onClickTabItem}
-              />
-            </>
+            <Tab
+              activeTab={activeTab}
+              key={generateID(15)}
+              label={label}
+              onClick={onClickTabItem}
+            />
           );
         })}
       </ol>

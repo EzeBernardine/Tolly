@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { Styles, PaymentStyles, SummaryStyles } from "./styles.js";
-import { Flex, Frame } from "../../component/Box/styles";
+import { Flex } from "../../component/Box/styles";
 import Header from "../../component/Header";
 import PaymentDetails from "./paymentDetails";
 import OrderSummary from "./orderSummary";
@@ -9,7 +9,7 @@ const Landing = () => {
   return (
     <Styles>
       <Flex minHeight="100vh" alignItems="flex-start">
-        <Flex width="60%"   alignItems='flex-start'>
+        <Flex width="60%" alignItems="flex-start">
           <PaymentStyles>
             <Header />
             <PaymentDetails />
@@ -27,4 +27,3 @@ const Landing = () => {
 };
 
 export default Landing;
-

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { Styles } from "./styles.js";
 import { Flex, Frame } from "../../component/Box/styles";
 import { Span, Header4 } from "../../component/FontSize/styles";

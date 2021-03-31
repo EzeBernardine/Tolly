@@ -59,12 +59,10 @@ export const AcordionWrapper = styled("div")`
   }
   @media (max-width: 820px) {
     .panel[aria-expanded="true"] .panel__label {
-   
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-
   }
 
   .panel[aria-expanded="true"] .panel_icon {
@@ -91,6 +89,8 @@ export const AcordionWrapper = styled("div")`
     color: #3a3d41;
     line-height: 26.8px;
     opacity: 0;
+    display: inline-block;
+    width: 100%;
     animation: enter 1s forwards;
     transition: opacity 0.3s linear 0.18s;
   }
