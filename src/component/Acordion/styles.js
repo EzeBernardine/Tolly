@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AcordionWrapper = styled("div")`
   width: ${({ width }) => (width ? width : "100%")};
-  margin: 5em 0;
+  margin: 5em 0 3rem;
   .panel {
     margin-top: 10px;
   }
